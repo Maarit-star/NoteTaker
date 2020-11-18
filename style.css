@@ -1,0 +1,91 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+h1{
+    font-size: 2.5rem;
+    padding-bottom: none;
+}
+h3 {
+    color:#3ED03E;
+    line-height: 80%;
+
+}
+.main {
+    width: 100%;
+    margin: 0 auto;
+}
+#inputField {
+    width:600px;
+    height:30px;
+    border-radius: 5px;
+    border: solid 1px lightgrey;
+    margin-bottom: 15px;
+}
+
+.addNote {
+background-color: #3ED03E;
+padding: 5px 15px;
+border-radius: 5px;
+color: white;
+border-style: none;
+}
+#addNote:hover {
+    background-color: green;
+}
+
+#myList {
+    margin:auto;
+    padding:20px;
+    height: 1000px;
+    width:60%;
+  }
+
+  .divItem {
+      width:40%;
+      float:left;
+      padding:20px;
+      margin:5px;
+      border:1px solid lightgrey;
+      border-radius: 5px;
+    
+  }
+  .title{
+      color:black;
+      font-weight: bold;
+  }
+
+.modal-container{
+    background-color:rgba(0,0,0,0.3);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    opacity:0;
+    pointer-events: none;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+}
+.modal-container.show {
+    pointer-events: auto;
+    opacity:1;
+}
+.modal {
+    background-color:#fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    padding: 30px 50px;
+    width:600px;
+    max-width: 100%;
+    text-align: center;
+}
+.overflowHidden{
+    display: inline-block;
+    width: 120px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
